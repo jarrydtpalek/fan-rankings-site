@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fan Playoff Rankings</title>
   <style>
+    /* General Styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -12,12 +13,51 @@
       background-color: #f4f4f4;
       color: #333;
     }
+
+    /* Header Styles */
     header {
       background-color: #1e3d73;
       color: white;
-      padding: 1rem 0;
-      text-align: center;
+      padding: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700; /* Gold color for hover effect */
+    }
+
+    /* Main Content Styles */
     .container {
       max-width: 800px;
       margin: 20px auto;
@@ -26,18 +66,22 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       text-align: center;
       color: #1e3d73;
     }
+
     p {
       font-size: 1.2rem;
       line-height: 1.6;
     }
+
     .cta {
       text-align: center;
       margin: 20px 0;
     }
+
     .cta a {
       display: inline-block;
       padding: 10px 20px;
@@ -47,6 +91,7 @@
       border-radius: 5px;
       font-size: 1rem;
     }
+
     .cta a:hover {
       background-color: #163459;
     }
@@ -54,7 +99,17 @@
 </head>
 <body>
   <header>
-    <h1>Fan College Football Playoff Rankings</h1>
+    <nav>
+      <div class="logo">
+        <img src="karen.jpg" alt="Karen" style="height: 50px;">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cfb-ranking.html">CFB Ranking</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="container">
     <h1>Welcome to Fan Rankings!</h1>
