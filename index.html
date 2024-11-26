@@ -1,122 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fan Playoff Rankings</title>
-  <style>
-    /* General Styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan Rankings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd25608bae.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar__container">
+          <a href="/" id="navbar-logo"
+            ><img src="karen.jpg" alt="Karen" id="logo-image"
+          /></a>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/cfb-ranking.html" class="navbar__links">CFB Rankings</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/about.html" class="navbar__links">About Us</a>
+            </li>
+          </ul>
 
-    /* Header Styles */
-    header {
-      background-color: #1e3d73;
-      color: white;
-      padding: 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+          <div class="navbar__btn desktop">
+            <a href="login.html" class="button">Log In</a>
+          </div>
 
-    /* Navigation Bar */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
+          <button
+            class="navbar__toggle"
+            id="mobile-menu"
+            aria-label="Toggle Navigation"
+            aria-expanded=""
+            false
+          >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        </div>
+      </nav>
+    </header>
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-size: 1rem;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #ffd700; /* Gold color for hover effect */
-    }
-
-    /* Main Content Styles */
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      text-align: center;
-      color: #1e3d73;
-    }
-
-    p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-
-    .cta {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    .cta a {
-      display: inline-block;
-      padding: 10px 20px;
-      color: white;
-      background-color: #1e3d73;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    .cta a:hover {
-      background-color: #163459;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="karen.jpg" alt="Karen" style="height: 50px;">
-      </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cfb-ranking.html">CFB Ranking</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <h1>Welcome to Fan Rankings!</h1>
-    <p>Join us in creating a unique fan-driven ranking system for college football playoff teams. Submit your polls, see how your rankings compare, and become part of the ultimate fan consensus.</p>
-    <div class="cta">
-      <a href="#">Submit Your Poll</a>
-    </div>
-  </div>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
